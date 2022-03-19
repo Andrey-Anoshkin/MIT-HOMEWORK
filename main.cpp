@@ -15,9 +15,9 @@ vector<int> create_vector(int n) {
 	vector<int> vec;
 	for (int i = 0; i < n; vec.push_back(rand() % 10000), ++i);
 
-	for (int i = 0; i < n; cin >> vec[i], ++i);
+	//for (int i = 0; i < n; cin >> vec[i], ++i);
 
-	//print(vec);
+	print(vec);
 
 	return vec;
 }
@@ -43,8 +43,6 @@ void class_sort(vector<int>& vec, int k_10, int n) {
 }
 
 void RadixSortMSD(vector<int> &vec, int n) {
-	vector<vector<int>> data;
-	data.resize(10);
 	//Максимальное число
 	int mx = 0;
 	for (int i = 0; i < n; mx = max(mx, vec[i]), ++i);
@@ -58,22 +56,7 @@ void RadixSortMSD(vector<int> &vec, int n) {
 	int k_10 = 1;
 	for (int i = 0; i < k - 1; k_10 *= 10, ++i);
 	
-	//Заполнили data по максимальному разряду
-	for (int j = 0; j < n; ++j)
-		data[(vec[j] / k_10) % 10].push_back(vec[j]);
-	//Для каждого подвектора data, если его размер больше 1, вызываем функцию с этим подвектором, 10^(k-1) и размером этого подвектора
-	for (int i = 0; i < 10; ++i)
-		if (data[i].size() > 1)
-			class_sort(data[i], k_10 / 10, data[i].size());
-	
-	//Очищаем первоначальный вектор
-	vec.clear();
-	
-	//Загружаем в него отсортированные подвектора data
-	for (int j = 0; j < 10; ++j) {
-		for (vector<int>::iterator it = data[j].begin(); it != data[j].end(); vec.push_back(*it), ++it);
-		data[j].clear();
-	}
+	class_sort(vec, k_10, n);
 }
 
 int main() {
