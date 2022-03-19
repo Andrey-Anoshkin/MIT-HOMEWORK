@@ -15,9 +15,9 @@ vector<int> create_vector(int n) {
 	vector<int> vec;
 	for (int i = 0; i < n; vec.push_back(rand() % 10000), ++i);
 
-	for (int i = 0; i < n; cin >> vec[i], ++i);
+	//for (int i = 0; i < n; cin >> vec[i], ++i);
 
-	//print(vec);
+	print(vec);
 
 	return vec;
 }
