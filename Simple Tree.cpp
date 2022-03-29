@@ -16,7 +16,7 @@ int main() {
 		switch (option) {
 		case 1: root.Insert(); break;
 		case 2: root.Delete(); break;
-		case 3: root.Clear(); break;
+		case 3: root.Clear(true); break;
 		case 4: root.IsContains(); break;
 		case 5: root.IsEmpty(); break;
 		case 6: root.Show(); break;

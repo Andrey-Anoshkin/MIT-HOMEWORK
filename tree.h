@@ -19,21 +19,25 @@ class Tree {
 private:
 	tree<Type>* tr = new tree<Type>;
 	Type R = tr->inf;
-	
+
 public:
-	Tree() {
+	Tree(){
 		tr->parent = nullptr;
 		tr->branches = {};
 	}
+	~Tree(){
+		Clear();
+	}
 
-	void insert(tree<Type>*& node, Type x) {
+
+	void insert(tree<Type>*& node, Type x){
 		tree<Type>* r = new tree<Type>;
 		r->inf = x;
 		r->parent = node;
 		node->branches.push_back(r);
 	}
 
-	void preorder() {
+	void preorder(){
 		cout << "\t" << tr->inf << "\n";
 		int n = tr->branches.size();
 		for (int i = 0; i < n; ++i) {
@@ -42,8 +46,8 @@ public:
 		cout << "\n";
 	}
 
-	void Insert() {
-		if (tr->inf == R) {
+	void Insert(){
+		if (tr->inf == R){
 			Type x; cout << "Input root value = "; cin >> x;
 			tr->inf = x;
 		}
@@ -54,7 +58,7 @@ public:
 			string command = "";
 			Type value;
 			int arg;
-			
+
 			cout << "Enter command: "; cin >> command;
 			if (command == "move") {
 				cin >> arg;
@@ -124,12 +128,22 @@ public:
 			tr = tr->parent;
 	}
 
-	void Clear() {
-		tree<Type>* root = new tree<Type>;
-		root->parent = nullptr;
-		root->branches = {};
-		tr = root;
-		cout << "The tree successfully cleared!\n";
+	void Clear(bool flag = false) {
+		clear(tr, flag);
+	}
+
+	void clear(tree<Type>*& node, bool flag = false) {
+		int n = node->branches.size();
+		for (int i = 0; i < n; ++i)
+			clear(node->branches[i]);
+		delete node;
+		if (flag) {
+			tree<Type>* r = new tree<Type>;
+			r->parent = nullptr;
+			r->branches = {};
+			Type R = r->inf;
+			node = r;
+		}
 	}
 
 	bool finding(tree<Type>*& node, Type x) {
