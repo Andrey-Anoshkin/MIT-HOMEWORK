@@ -1,0 +1,27 @@
+\begin{thebibliography}{1}
+\def\selectlanguageifdefined#1{
+\expandafter\ifx\csname date#1\endcsname\relax
+\else\language\csname l@#1\endcsname\fi}
+\ifx\undefined\url\def\url#1{{\small #1}}\else\fi
+\ifx\undefined\BibAuthor\def\BibAuthor#1{\emph{#1}}\else\fi
+\ifx\undefined\BibTitle\def\BibTitle#1{#1}\else\fi
+\ifx\undefined\BibUrl\def\BibUrl#1{\url{#1}}\else\fi
+\ifx\undefined\BibAnnote\def\BibAnnote#1{}\else\fi
+\ifx\undefined\BibSection\def\BibSection#1#2#3{}\else\fi
+
+\bibitem{intr}
+\selectlanguageifdefined{english}
+\BibAuthor{Седых,~И.} \BibTitle{Индустрия компьютерных игр}~/ И.~Седых~//
+  \emph{М.: НИУ ВШЭ}. "---
+\newblock 2020.
+
+\bibitem{duminsh}
+\selectlanguageifdefined{english}
+\BibAuthor{Думиньш,~А.~А.} \BibTitle{Компьютерные игры в обучении и технологии
+  их разработки}~/ А.~А. Думиньш, Л.~В. Зайцева~// \emph{Образовательные
+  технологии и общество}. "---
+\newblock 2012. "---
+\newblock Vol.~15, no.~3. "---
+\newblock Pp.~534--544.
+
+\end{thebibliography}
