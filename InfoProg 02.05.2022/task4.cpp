@@ -78,7 +78,7 @@ void width_tracing(tree* tr, int n) {
 			cout << "\n";
 			k2 *= 2;
 		}
-		if (k2 > depth)
+		if (k2 >= depth)
 			break;
 		tree* r = pop(h, t);
 		
