@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3 32-bit Portable) (preloaded format=pdflatex 2021.5.20)  2 MAY 2022 21:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3 32-bit Portable) (preloaded format=pdflatex 2021.5.20)  12 MAY 2022 20:31
 entering extended mode
 **./example-work.tex
 (example-work.tex
@@ -1928,40 +1928,42 @@ LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
 
 ] [4
 
-] [5] [6] [7
+] [5] [6] [7] [8] [9
 
-] (example-work.bbl
+] (example-work.bbl [10
+
+]
 Underfull \hbox (badness 1990) in paragraph at lines 20--26
 []\T2A/Tempora-TLF/m/it/14.4 Думиньш, А. А. \T2A/Tempora-TLF/m/n/14.4 Компьютер
 ные игры в обучении и технологии их
  []
 
-) [8
+) [11
 
 ] (example-work.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `example-work.out' has not changed.
-(rerunfilecheck)             Checksum: 26648B9F5B7DF968D70BEBD5280F1620;1627.
+(rerunfilecheck)             Checksum: 1217E949178C594C6F4836E16E3BD727;2298.
  ) 
 Here is how much of TeX's memory you used:
- 16578 strings out of 479129
- 254591 string characters out of 2849007
- 553116 words of memory out of 3000000
- 33866 multiletter control sequences out of 15000+600000
+ 16597 strings out of 479129
+ 254810 string characters out of 2849007
+ 553121 words of memory out of 3000000
+ 33870 multiletter control sequences out of 15000+600000
  418934 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,5n,77p,481b,645s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,5n,77p,481b,642s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/PC/Desktop/LaTeX/PortableTEX/texmfs/install/fonts/enc/dvips/tempora
 /t2a-tempora.enc}<C:/Users/PC/Desktop/LaTeX/PortableTEX/texmfs/install/fonts/ty
 pe1/public/tempora/Tempora-Bold.pfb><C:/Users/PC/Desktop/LaTeX/PortableTEX/texm
 fs/install/fonts/type1/public/tempora/Tempora-Italic.pfb><C:/Users/PC/Desktop/L
 aTeX/PortableTEX/texmfs/install/fonts/type1/public/tempora/Tempora-Regular.pfb>
 
-Output written on example-work.pdf (8 pages, 121738 bytes).
+Output written on example-work.pdf (11 pages, 129197 bytes).
 PDF statistics:
- 138 PDF objects out of 1000 (max. 8388607)
- 41 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 181 PDF objects out of 1000 (max. 8388607)
+ 56 named destinations out of 1000 (max. 500000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 

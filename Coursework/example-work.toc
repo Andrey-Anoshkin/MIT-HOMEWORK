@@ -1,12 +1,16 @@
 \babel@toc {russian}{}
 \contentsline {section}{\cyrillictext \CYRV \CYRV \CYRE \CYRD \CYRE \CYRN \CYRI \CYRE }{3}{section*.1}%
 \contentsline {section}{\numberline {1}\IeC {\CYRR }\IeC {\cyra }\IeC {\cyrz }\IeC {\cyrr }\IeC {\cyra }\IeC {\cyrb }\IeC {\cyro }\IeC {\cyrt }\IeC {\cyrk }\IeC {\cyra } \IeC {\cyri }\IeC {\cyrg }\IeC {\cyrr }}{4}{section.1}%
-\contentsline {subsection}{\numberline {1.1}\IeC {\CYRP }\IeC {\cyro }\IeC {\cyrp }\IeC {\cyru }\IeC {\cyrl }\IeC {\cyrya }\IeC {\cyrr }\IeC {\cyrn }\IeC {\cyrery }\IeC {\cyre } \IeC {\cyrs }\IeC {\cyrr }\IeC {\cyre }\IeC {\cyrd }\IeC {\cyrery } \IeC {\cyrr }\IeC {\cyra }\IeC {\cyrz }\IeC {\cyrr }\IeC {\cyra }\IeC {\cyrb }\IeC {\cyro }\IeC {\cyrt }\IeC {\cyrk }\IeC {\cyri }}{4}{subsection.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.1}\bf Unreal Engine}{4}{subsubsection.1.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.2}\bf Source}{5}{subsubsection.1.1.2}%
-\contentsline {subsubsection}{\numberline {1.1.3}\bf Unity}{5}{subsubsection.1.1.3}%
-\contentsline {section}{\numberline {2}\IeC {\CYRP }\IeC {\cyrr }\IeC {\cyro }\IeC {\cyrf }\IeC {\cyre }\IeC {\cyrs }\IeC {\cyrs }\IeC {\cyri }\IeC {\cyrya } \IeC {\cyrr }\IeC {\cyra }\IeC {\cyrz }\IeC {\cyrr }\IeC {\cyra }\IeC {\cyrb }\IeC {\cyro }\IeC {\cyrt }\IeC {\cyrch }\IeC {\cyri }\IeC {\cyrk }\IeC {\cyra }}{7}{section.2}%
-\contentsline {section}{\numberline {3}\IeC {\CYRCH }\IeC {\cyra }\IeC {\cyrs }\IeC {\cyrt }\IeC {\cyrsftsn } \IeC {\CYRT }\IeC {\cyro }\IeC {\cyrl }\IeC {\cyri }}{7}{section.3}%
-\contentsline {section}{\cyrillictext \CYRZ \CYRA \CYRK \CYRL \CYRYU \CYRCH \CYRE \CYRN \CYRI \CYRE }{8}{section*.2}%
-\contentsline {section}{\cyrillictext \CYRS \CYRP \CYRI \CYRS \CYRO \CYRK \ \CYRI \CYRS \CYRP \CYRO \CYRL \CYRSFTSN \CYRZ \CYRO \CYRV \CYRA \CYRN \CYRN \CYRERY \CYRH \ \CYRI \CYRS \CYRT \CYRO \CYRCH \CYRN \CYRI \CYRK \CYRO \CYRV }{8}{section*.3}%
+\contentsline {subsection}{\numberline {1.1}\IeC {\CYREREV }\IeC {\cyrt }\IeC {\cyra }\IeC {\cyrp }\IeC {\cyrery } \IeC {\cyrr }\IeC {\cyra }\IeC {\cyrz }\IeC {\cyrr }\IeC {\cyra }\IeC {\cyrb }\IeC {\cyro }\IeC {\cyrt }\IeC {\cyrk }\IeC {\cyri }}{4}{subsection.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}\IeC {\CYRK }\IeC {\cyro }\IeC {\cyrn }\IeC {\cyrc }\IeC {\cyre }\IeC {\cyrp }\IeC {\cyrc }\IeC {\cyri }\IeC {\cyrya }}{4}{subsubsection.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.2}\IeC {\CYRP }\IeC {\cyrr }\IeC {\cyre }\IeC {\cyrp }\IeC {\cyrr }\IeC {\cyro }\IeC {\cyrd }\IeC {\cyra }\IeC {\cyrk }\IeC {\cyrsh }\IeC {\cyrn }}{5}{subsubsection.1.1.2}%
+\contentsline {subsubsection}{\numberline {1.1.3}\IeC {\CYRP }\IeC {\cyrr }\IeC {\cyro }\IeC {\cyrd }\IeC {\cyra }\IeC {\cyrk }\IeC {\cyrsh }\IeC {\cyrn }}{5}{subsubsection.1.1.3}%
+\contentsline {subsubsection}{\numberline {1.1.4}\IeC {\CYRP }\IeC {\cyro }\IeC {\cyrs }\IeC {\cyrt }\IeC {\cyrp }\IeC {\cyrr }\IeC {\cyro }\IeC {\cyrd }\IeC {\cyra }\IeC {\cyrk }\IeC {\cyrsh }\IeC {\cyrn }}{6}{subsubsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.2}\IeC {\CYRP }\IeC {\cyro }\IeC {\cyrp }\IeC {\cyru }\IeC {\cyrl }\IeC {\cyrya }\IeC {\cyrr }\IeC {\cyrn }\IeC {\cyrery }\IeC {\cyre } \IeC {\cyrs }\IeC {\cyrr }\IeC {\cyre }\IeC {\cyrd }\IeC {\cyrery } \IeC {\cyrr }\IeC {\cyra }\IeC {\cyrz }\IeC {\cyrr }\IeC {\cyra }\IeC {\cyrb }\IeC {\cyro }\IeC {\cyrt }\IeC {\cyrk }\IeC {\cyri }}{6}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Unreal Engine}{6}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Source}{7}{subsubsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.3}Unity}{7}{subsubsection.1.2.3}%
+\contentsline {section}{\numberline {2}\IeC {\CYRO }\IeC {\cyrp }\IeC {\cyrery }\IeC {\cyrt } \IeC {\cyrv } \IeC {\cyrr }\IeC {\cyra }\IeC {\cyrz }\IeC {\cyrr }\IeC {\cyra }\IeC {\cyrb }\IeC {\cyro }\IeC {\cyrt }\IeC {\cyrk }\IeC {\cyre } \IeC {\cyrn }\IeC {\cyra } Unity}{9}{section.2}%
+\contentsline {section}{\cyrillictext \CYRZ \CYRA \CYRK \CYRL \CYRYU \CYRCH \CYRE \CYRN \CYRI \CYRE }{10}{section*.2}%
+\contentsline {section}{\cyrillictext \CYRS \CYRP \CYRI \CYRS \CYRO \CYRK \ \CYRI \CYRS \CYRP \CYRO \CYRL \CYRSFTSN \CYRZ \CYRO \CYRV \CYRA \CYRN \CYRN \CYRERY \CYRH \ \CYRI \CYRS \CYRT \CYRO \CYRCH \CYRN \CYRI \CYRK \CYRO \CYRV }{11}{section*.3}%
 \contentsfinish 
