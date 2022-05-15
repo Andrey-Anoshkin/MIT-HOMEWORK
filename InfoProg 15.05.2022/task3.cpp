@@ -16,12 +16,15 @@ void _run() {
 		cout << "Node " << i << ": "; getline(cin, str);
 		istringstream in(str);
 		int x = 0;
-		while (in >> x) 
-			if (x < n) 
+		while (in >> x)
+			if (x < n)
 				Graph[i].push_back(x);
-		
+
 		Graph[i].erase(unique(Graph[i].begin(), Graph[i].end()), Graph[i].end());
 	}
+
+	for (int i = 0; i < n; cout << "\n", ++i)
+		cout << "Node " << i << " outcome degree: " << Graph[i].size();
 }
 
 int main() {
