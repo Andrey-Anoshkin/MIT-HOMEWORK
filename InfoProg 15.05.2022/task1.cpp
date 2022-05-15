@@ -13,7 +13,7 @@ int quantity(vector<vector<int>> Gr, int x) {
 		if (i == x)
 			ans += Gr[x].size();
 		else
-			if (find(Gr[i].begin(), Gr[i].end(), x) != Gr[i].end())
+			if (find(Gr[i].begin(), Gr[i].end(), x) != Gr[i].end() && find(Gr[x].begin(), Gr[x].end(), i) == Gr[x].end())
 				ans += 1;
 
 	return ans;
