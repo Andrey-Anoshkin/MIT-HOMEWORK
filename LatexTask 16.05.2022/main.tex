@@ -1,4 +1,4 @@
-\documentclass[bachelor, och, referat]{SCWorks}
+\documentclass[bachelor, och, coursework]{SCWorks}
 % параметр - тип обучения - одно из значений:
 %    spec     - специальность
 %    bachelor - бакалавриат (по умолчанию)
@@ -32,6 +32,8 @@
 \usepackage{array}
 \usepackage[english,russian]{babel}
 \usepackage{tempora}
+\usepackage{minted}
+\usepackage{xcolor}
 
 \usepackage[colorlinks=true]{hyperref}
 
@@ -123,7 +125,6 @@
 % Если присутствует, то заменяет собой разделы "Обозначения и сокращения" и "Определения"
 %\defabbr
 
-
 % Раздел "Введение"
 \intro
 
@@ -173,6 +174,138 @@
 \item Должна быть доступна возможность эффективного освобождения всей
 выделенной регионом памяти.
 \end{enumerate}
+
+Так как выделение нового участка потенциально может сопровождаться изменением адресов объектов, то необходимо организовать доступ к ним независимо
+от первоначального адреса. Для этого для каждого объекта будем получать
+доступ к нему через некоторый индекс.
+
+Кроме того, коэффициент увеличения должен быть выбран таким образом, чтобы был соблюден баланс между оптимальным объемом выделенной
+памяти и частотой системных вызовов.
+
+\subsubsection{Определение структуры}
+
+\setminted{
+	style=bw,
+	framesep=2mm, 
+	baselinestretch=1.2, 
+	fontsize=\small, 
+	linenos,
+	breaklines=true
+}
+
+Определим нашу структуру следующим образом:
+
+\begin{minted}{cpp}
+typedef struct arena {
+	// Указатель на начало региона
+	struct node* arena;
+	// Размер региона
+	unsigned int size;
+	// Объем выделенной регионом памяти
+	unsigned int allocated;
+} arena;
+\end{minted}
+
+\subsubsection{Инициализация}
+
+Теперь определим функцию arena\_construct, выполняющую начальную
+инициализацию состояния региона:
+
+\begin{minted}{cpp}
+int arena_construct (arena* arena) {
+	// Начальный размер региона равен некоторой постоянной, равной DEFAULT_ARENA_SIZE
+	arena->size = DEFAULT_ARENA_SIZE;
+	arena->allocated = 0;
+	// Выделим необходимое число памяти
+	arena->arena = malloc(sizeof(node) * DEFAULT_ARENA_SIZE);
+	// Если выделение прошло неудачно - вернем в качестве кода ошибки отличное от 0 значение.
+	if (arena->arena == NULL) {
+		return (!0);
+	}
+	return 0;
+}
+\end{minted}
+
+\subsubsection{Выделение памяти}
+
+После выделения некоторого объема памяти возможно обращение к ней.
+Определим это обращение с помощью функции arena\_allocate:
+
+\begin{minted}{cpp}
+int arena_allocate (arena* arena, unsigned int count) {
+	// Если места в регионе недостаточно
+	if (arena->allocated + count >= arena->size) {
+		// Определим новый размер региона
+		unsigned int newSize = MULTIPLY_FACTOR * arena->size;
+		// Выделим регион большего размера и освободим ранее занятую память
+		node* newArena = realloc(arena->arena,
+			newSize * sizeof(node));
+		if (NULL == newArena) {
+			return -1;
+		}
+		arena->arena = newArena;
+		arena->size = newSize;
+	}
+	// В качестве результата вернем индекс первого свободного участка региона
+	unsigned int result = arena->allocated;
+	// Сместим индекс на объем выделенной памяти
+	arena->allocated += count;
+	// Вернем результат
+	return result;
+}
+\end{minted}
+Отметим, что наиболее часто значением MULTIPLY\_FACTOR оказывается числа
+1.5 и 2. Это позволяет достичь амортизационно константного времени выполнения операции выделения памяти\cite{genmodels}.
+
+\subsubsection{Освобождение выделенной памяти}
+
+Наконец, реализуем освобождение выделенной региону памяти с помощью функции arena\_free
+
+\begin{minted}{cpp}
+void arena_free (arena* arena) {
+	if (arena->arena != NULL)
+	free(arena->arena);
+	arena->arena = NULL;
+}
+\end{minted}
+
+\subsubsection{Модификация абстрактного синтаксического дерева}
+
+Осталось изменить исходный код программы, чтобы обеспечить выделение памяти с помощью полученной нами структуры данных.
+
+Для этого воспользуемся директивой \%param и заявим в качестве параметра переменную типа arena*. В функциях eval, newnum, newast внесем изменения, чтобы обеспечить выделение памятью с помощью написанных ранее
+функций.
+
+С полным кодом программы можно ознакомиться в приложении А.
+
+\subsubsection{Сборка проекта}
+
+Теперь проект можно собрать, незначительно изменив Makefile:
+
+\begin{minted}{cpp}
+calc.out: calc.l calc.y arena_ast.h
+	bison -d calc.y
+	flex calc.l
+	cc -o $@ calc.tab.c lex.yy.c arena_ast.c arena.c
+\end{minted}
+и запустить. Результат работы программы представлен на рис. \ref{pic1}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\linewidth]{pics/naivetest.png}
+\caption{Демонстрация работы программы}
+\label{pic1}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
 % Раздел "Заключение"
 \conclusion
 
