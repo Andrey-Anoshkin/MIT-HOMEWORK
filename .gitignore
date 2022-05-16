@@ -3,3 +3,11 @@ scripts/*
 InfoProg 20.03.2022/*
 InfoProg 27.03.2022/*
 Branches/
+*.log
+*.bbl
+*.blg
+*.aux
+*.out
+*.pdf
+*.gz
+*.toc
