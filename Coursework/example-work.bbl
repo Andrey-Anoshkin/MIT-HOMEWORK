@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 \def\selectlanguageifdefined#1{
 \expandafter\ifx\csname date#1\endcsname\relax
 \else\language\csname l@#1\endcsname\fi}
@@ -23,5 +23,63 @@
 \newblock 2012. "---
 \newblock Vol.~15, no.~3. "---
 \newblock Pp.~534--544.
+
+\bibitem{gameprof}
+\selectlanguageifdefined{english}
+\BibTitle{Игровые профессии. Что входит в понятие разработчик компьютерных игр
+  [{Э}лектронный ресурс]}. "---
+\newblock URL:~\url{https://gamesisart.ru/game_dev_prof.html} (Дата обращения
+  02.05.2022). Загл. с экр. Яз. рус.
+
+\bibitem{dev}
+\selectlanguageifdefined{english}
+\BibTitle{Этапы разработки компьютерных игр. Освещаем процесс разработки
+  видеоигр [{Э}лектронный ресурс]}. "---
+\newblock
+  URL:~\url{https://gdjob.pro/stati/soiskatelyam/etapy-razrabotki-kompyuternykh-igr/#post-production}
+  (Дата обращения 08.05.2022). Загл. с экр. Яз. рус.
+
+\bibitem{questions}
+\selectlanguageifdefined{english}
+\BibTitle{Как создаются видеоигры: процесс разработки игр [{Э}лектронный
+  ресурс]}. "---
+\newblock URL:~\url{https://itanddigital.ru/videogame} (Дата обращения
+  08.05.2022). Загл. с экр. Яз. рус.
+
+\bibitem{test}
+\selectlanguageifdefined{english}
+\BibTitle{10 этапов разработки игр "--- CADELTA.RU [{Э}лектронный ресурс]}.
+  "---
+\newblock URL:~\url{https://cadelta.ru/games/id6614} (Дата обращения
+  08.05.2022). Загл. с экр. Яз. рус.
+
+\bibitem{engines}
+\selectlanguageifdefined{english}
+\BibTitle{Путеводитель по геймдеву. Не Unity едины. Большой обзор игровых
+  движков для начинающих и профи "--- Инди на DTF [{Э}лектронный ресурс]}. "---
+\newblock
+  URL:~\url{https://dtf.ru/indie/966434-putevoditel-po-geymdevu-ne-unity-ediny-bolshoy-obzor-igrovyh-dvizhkov-dlya-nachinayushchih-i-profi}
+  (Дата обращения 03.05.2022). Загл. с экр. Яз. рус.
+
+\bibitem{source}
+\selectlanguageifdefined{english}
+\BibTitle{Source "--- Value Developer Community [{Э}лектронный ресурс]}. "---
+\newblock URL:~\url{https://developer.valvesoftware.com/wiki/Source} (Дата
+  обращения 06.05.2022). Загл. с экр. Яз. англ.
+
+\bibitem{source1}
+\selectlanguageifdefined{english}
+\BibTitle{Source: обзор игрового движка и список игр [{Э}лектронный ресурс]}.
+  "---
+\newblock
+  URL:~\url{https://cubiq.ru/dvizhok-source-osobennosti-preimushhestva-i-nedostatki/}
+  (Дата обращения 06.05.2022). Загл. с экр. Яз. рус.
+
+\bibitem{unity}
+\selectlanguageifdefined{english}
+\BibTitle{Движок Unity "--- особенности, преимущества и недостатки
+  [{Э}лектронный ресурс]}. "---
+\newblock URL:~\url{https://cubiq.ru/dvizhok-unity/} (Дата обращения
+  08.05.2022). Загл. с экр. Яз. рус.
 
 \end{thebibliography}

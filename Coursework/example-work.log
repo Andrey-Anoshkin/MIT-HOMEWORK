@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3 32-bit Portable) (preloaded format=pdflatex 2021.5.20)  12 MAY 2022 20:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3 32-bit Portable) (preloaded format=pdflatex 2021.5.20)  21 MAY 2022 20:23
 entering extended mode
 **./example-work.tex
 (example-work.tex
@@ -1933,14 +1933,91 @@ LaTeX Font Info:    Font shape `T2A/Tempora-TLF/m/it' will be
 ] (example-work.bbl [10
 
 ]
-Underfull \hbox (badness 1990) in paragraph at lines 20--26
+Underfull \hbox (badness 1442) in paragraph at lines 20--26
 []\T2A/Tempora-TLF/m/it/14.4 Думиньш, А. А. \T2A/Tempora-TLF/m/n/14.4 Компьютер
 ные игры в обучении и технологии их
  []
 
-) [11
+LaTeX Font Info:    Trying to load font information for T2A+pcr on input line 3
+1.
+LaTeX Font Info:    No file T2Apcr.fd. on input line 31.
 
-] (example-work.aux)
+LaTeX Font Warning: Font shape `T2A/pcr/m/n' undefined
+(Font)              using `T2A/cmr/m/n' instead on input line 31.
+
+
+Underfull \hbox (badness 7273) in paragraph at lines 37--41
+\T2A/Tempora-TLF/m/n/14.4 видеоигр [Электронный ресурс].   URL: []$\T2A/pcr/m/
+n/14.4 https : / / gdjob . pro / stati /
+ []
+
+
+Underfull \hbox (badness 1137) in paragraph at lines 37--41
+\T2A/pcr/m/n/14.4 soiskatelyam / etapy-[]razrabotki-[]kompyuternykh-[]igr / #po
+st-[]production$[] \T2A/Tempora-TLF/m/n/14.4 (Дата
+ []
+
+
+Underfull \hbox (badness 3623) in paragraph at lines 45--48
+[]\T2A/Tempora-TLF/m/n/14.4 Как создаются видеоигры: процесс разработки игр [Эл
+ектронный
+ []
+
+
+Underfull \hbox (badness 2452) in paragraph at lines 45--48
+\T2A/Tempora-TLF/m/n/14.4 ресурс].   URL: []$\T2A/pcr/m/n/14.4 https : / / ita
+nddigital . ru / videogame$[] \T2A/Tempora-TLF/m/n/14.4 (Дата обращения
+ []
+
+
+Underfull \hbox (badness 1442) in paragraph at lines 51--55
+[]\T2A/Tempora-TLF/m/n/14.4 10 этапов разработки игр  CADELTA.RU [Электронный 
+ресурс]. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--63
+[]\T2A/Tempora-TLF/m/n/14.4 Путеводитель по геймдеву. Не Uni-ty едины. Большой 
+обзор
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--63
+\T2A/Tempora-TLF/m/n/14.4 игровых движков для начинающих и профи  Инди на
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--63
+\T2A/Tempora-TLF/m/n/14.4 DTF [Электронный ресурс].   URL: []$\T2A/pcr/m/n/14.
+4 https : / / dtf . ru / indie /
+ []
+
+
+Overfull \hbox (202.95012pt too wide) in paragraph at lines 59--63
+\T2A/pcr/m/n/14.4 966434-[]putevoditel-[]po-[]geymdevu-[]ne-[]unity-[]ediny-[]b
+olshoy-[]obzor-[]igrovyh-[]dvizhkov-[]dlya-[]nachinayushchih-[]i-[]pro$[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--77
+[]\T2A/Tempora-TLF/m/n/14.4 Source: обзор игрового движка и список игр
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--77
+\T2A/Tempora-TLF/m/n/14.4 [Электронный ресурс].   URL: []$\T2A/pcr/m/n/14.4 ht
+tps : / / cubiq . ru /
+ []
+
+
+Underfull \hbox (badness 4913) in paragraph at lines 81--84
+\T2A/Tempora-TLF/m/n/14.4 ресурс].   URL: []$\T2A/pcr/m/n/14.4 https : / / cub
+iq . ru / dvizhok-[]unity/$[] \T2A/Tempora-TLF/m/n/14.4 (Дата обращения
+ []
+
+[11
+
+]) [12] (example-work.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1948,22 +2025,23 @@ Package rerunfilecheck Info: File `example-work.out' has not changed.
 (rerunfilecheck)             Checksum: 1217E949178C594C6F4836E16E3BD727;2298.
  ) 
 Here is how much of TeX's memory you used:
- 16597 strings out of 479129
- 254810 string characters out of 2849007
- 553121 words of memory out of 3000000
- 33870 multiletter control sequences out of 15000+600000
+ 16625 strings out of 479129
+ 255104 string characters out of 2849007
+ 553347 words of memory out of 3000000
+ 33887 multiletter control sequences out of 15000+600000
  418934 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,5n,77p,481b,642s stack positions out of 5000i,500n,10000p,200000b,80000s
-{C:/Users/PC/Desktop/LaTeX/PortableTEX/texmfs/install/fonts/enc/dvips/tempora
-/t2a-tempora.enc}<C:/Users/PC/Desktop/LaTeX/PortableTEX/texmfs/install/fonts/ty
-pe1/public/tempora/Tempora-Bold.pfb><C:/Users/PC/Desktop/LaTeX/PortableTEX/texm
-fs/install/fonts/type1/public/tempora/Tempora-Italic.pfb><C:/Users/PC/Desktop/L
-aTeX/PortableTEX/texmfs/install/fonts/type1/public/tempora/Tempora-Regular.pfb>
-
-Output written on example-work.pdf (11 pages, 129197 bytes).
+ <C:\Users\PC\Desktop\LaTeX\PortableTEX\texmfs/data\fonts/pk/ljfour/lh/lh-t2a
+/dpi600\larm1440.pk>{C:/Users/PC/Desktop/LaTeX/PortableTEX/texmfs/install/fonts
+/enc/dvips/tempora/t2a-tempora.enc}<C:/Users/PC/Desktop/LaTeX/PortableTEX/texmf
+s/install/fonts/type1/public/tempora/Tempora-Bold.pfb><C:/Users/PC/Desktop/LaTe
+X/PortableTEX/texmfs/install/fonts/type1/public/tempora/Tempora-Italic.pfb><C:/
+Users/PC/Desktop/LaTeX/PortableTEX/texmfs/install/fonts/type1/public/tempora/Te
+mpora-Regular.pfb>
+Output written on example-work.pdf (12 pages, 151172 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 56 named destinations out of 1000 (max. 500000)
+ 257 PDF objects out of 1000 (max. 8388607)
+ 65 named destinations out of 1000 (max. 500000)
  113 words of extra memory for PDF output out of 10000 (max. 10000000)
 

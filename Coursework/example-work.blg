@@ -9,17 +9,20 @@ Reallocated glb_str_ptr (elt_size=4) to 10 items from 0.
 Reallocated global_strs (elt_size=1001) to 10 items from 0.
 Reallocated glb_str_end (elt_size=4) to 10 items from 0.
 Database file #1: thesis.bib
-I was expecting a `,' or a `}'---line 124 of file thesis.bib
- :   
- :   YEAR =         {1987},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
+Warning--empty year in gameprof
+Warning--empty year in dev
+Warning--empty year in questions
+Warning--empty year in test
+Warning--empty year in engines
+Warning--empty year in source
+Warning--empty year in source1
+Warning--empty year in unity
 
 Here's how much of BibTeX's memory you used:
- Cites:                 2 out of 750
- Fields:               34 out of 5000
- Hash table:        18790 out of 19000
- Strings:             664 out of 19000
- Free string pool:   5756 out of 65000
+ Cites:                10 out of 750
+ Fields:              282 out of 5000
+ Hash table:        18782 out of 19000
+ Strings:             688 out of 19000
+ Free string pool:   7426 out of 65000
  Wizard functions:   2649 out of 3000
-(There was 1 error message)
+(There were 8 warnings)
