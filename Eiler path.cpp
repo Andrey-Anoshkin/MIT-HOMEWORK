@@ -10,7 +10,7 @@ using namespace std;
 
 void dfs(vector<vector<int>> Gr, bool* used, vector<int>& order, int x) {
 	used[x] = 1;
-	for (int i = 0; i < Gr[x].size(); ++i) 
+	for (int i = 0; i < Gr[x].size(); ++i)
 		if (!used[Gr[x][i]])
 			dfs(Gr, used, order, Gr[x][i]);
 
@@ -34,7 +34,7 @@ void eiler(vector<vector<int>>& Gr, int n) {
 	vector<int> res;
 	vector<int> path;
 
-	
+
 
 	for (int i = 0; i < n; ++i) {
 		if (Gr[i].size() % 2)
@@ -56,19 +56,19 @@ void eiler(vector<vector<int>>& Gr, int n) {
 	}
 
 	stack<int> h;
-	h.push(v1);
+	h.push((v1 >= 0) ? v1 : 0);
 	while (!h.empty()) {
 		int r = h.top();
 		if (Gr[r].size()) {
 			int x = Gr[r][0];
 			h.push(x);
 
-			
+
 			swap(Gr[r][0], Gr[r][Gr[r].size() - 1]);
 			Gr[r].pop_back();
 			sort(Gr[r].begin(), Gr[r].end());
 
-			for (int i = 0; i < Gr[x].size(); ++i) 
+			for (int i = 0; i < Gr[x].size(); ++i)
 				if (Gr[x][i] == r) {
 					swap(Gr[x][i], Gr[x][Gr[x].size() - 1]);
 					Gr[x].pop_back();
@@ -82,7 +82,7 @@ void eiler(vector<vector<int>>& Gr, int n) {
 		}
 	}
 
-	if (v1 != -1) 
+	if (v1 != -1)
 		for (int i = 0; i + 1 < res.size(); ++i)
 			if (res[i] == v1 && res[i + 1] == v2) {
 				vector<int> res1;
@@ -92,8 +92,8 @@ void eiler(vector<vector<int>>& Gr, int n) {
 					res1.push_back(res[j]);
 				res = res1;
 			}
-	
-		
+
+
 	for (int i = 0; i < n; ++i)
 		if (Gr[i].size()) {
 			cout << "No cycle!\n";
